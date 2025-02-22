@@ -24,12 +24,23 @@ public class CalculatorTest {
         assertEquals(2.0, divide(6.0, 3.0), 0);
     }
 
+    
+    @Test
+    public void testAddSubstract() {
+        assertEquals(9.0, addSubtract(6.0, 3.0), 0);
+    }
+
+
     private double add(double a, double b) {
         return a + b;
     }
 
     private double subtract(double a, double b) {
         return a - b;
+    }
+
+    private double addSubtract(double a, double b) {
+        return (b + a);
     }
 
     private double multiply(double a, double b) {
